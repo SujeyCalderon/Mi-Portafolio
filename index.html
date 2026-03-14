@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujey Calderón | FullStack Developer</title>
+    <meta name="description" content="Landing page personal de Sujey Calderón Martínez, Desarrolladora FullStack especialista en Backend, IoT y AWS.">
+    
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo"><span>S</span> Calderón</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Stack</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="mono highlight intro-greeting">// Hola, mi nombre es</p>
+                    <div class="hero-header-flex">
+                        <div class="hero-photo-container">
+                            <img src="img/foto.jpeg" alt="Sujey Calderón" class="hero-photo">
+                        </div>
+                        <div class="hero-titles">
+                            <h1 id="heroName" data-type-text="Sujey Calderón Martínez"></h1>
+                        </div>
+                    </div>
+                    <h2 class="mono">Desarrolladora FullStack | <span class="highlight">Especialista Backend</span></h2>
+                    <p>Desarrolladora FullStack con enfoque en Backend. Especializada en APIs REST, bases de datos (SQL/NoSQL), IoT y despliegue en AWS. Trabajo en equipos ágiles y multidisciplinarios.</p>
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn btn-primary"><i class="fas fa-folder-open"></i> Ver proyectos</a>
+                        <a href="cv.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Descargar CV</a>
+                        <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contacto</a>
+                    </div>
+                </div>
+                
+                <aside class="contact-card">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <p>calderonmartinezsujey@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <p>GitHub</p>
+                            <p>@SujeyCalderon</p>
+                        </div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/sujey-calder%C3%B3n-mart%C3%ADnez-692867278" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <p>LinkedIn</p>
+                            <p>sujey-calderon-martinez</p>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>Teléfono</p>
+                            <p>+52 994 106 3527</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-file-pdf"></i>
+                        <div>
+                            <p>CV</p>
+                            <p><a href="cv.pdf" download class="highlight">Descargar PDF</a></p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+        <section id="sobre-mi">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="section-title">👩‍💻 Sobre Mí</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                    Soy una desarrolladora FullStack con enfoque en Backend, estudiante de Ingeniería en Software en la Universidad Politécnica de Chiapas. Me especializo en la construcción de APIs REST, gestión de bases de datos relacionales y NoSQL, y despliegue de aplicaciones en la nube con AWS. 
+                </p>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                    También he trabajado con soluciones IoT, integrando sensores con backends en la nube. Disfruto trabajar en equipos multidisciplinarios ágiles, con alta capacidad de adaptación y aprendizaje continuo.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <p class="stat-number">5+</p>
+                        <p class="stat-label">Proyectos Reales</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">8°</p>
+                        <p class="stat-label">Cuatrimestre</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">AWS</p>
+                        <p class="stat-label">EC2 Deployed</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">IoT</p>
+                        <p class="stat-label">Cloud Integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="container">
+                <h2 class="section-title">✨ Proyectos Destacados</h2>
+                <div class="projects-container">
+                    <div class="projects-wrapper" id="projectsWrapper">
+                        <div class="project-card">
+                        <div class="project-img"><img src="img/Vigi.jpeg" alt="VigiTech"></div>
+                        <div class="project-info">
+                            <h3>VigiTech</h3>
+                            <p class="project-role">Backend · Microservicios · IoT</p>
+                            <p class="project-desc">Plataforma de vigilancia inteligente para laboratorios. Integra sensores, video en vivo y análisis predictivo en Go.</p>
+                            <div class="project-tags">
+                                <span class="tag">Go</span> <span class="tag">Python</span> <span class="tag">WebSockets</span>
+                            </div>
+                            <a href="https://github.com/SujeyCalderon/Api-Consumer-VigiTech" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img/Casm.jpeg" alt="CASM"></div>
+                        <div class="project-info">
+                            <h3>CASM</h3>
+                            <p class="project-role">FullStack · Salud Mental</p>
+                            <p class="project-desc">Red social para salud mental con directorio de profesionales y chat en tiempo real.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span> <span class="tag">Node.js</span> <span class="tag">Socket.io</span>
+                            </div>
+                            <a href="https://github.com/FabricioPRZ/CASM" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img/cursy.jpeg" alt="Cursy"></div>
+                        <div class="project-info">
+                            <h3>Cursy</h3>
+                            <p class="project-role">Mobile & Backend</p>
+                            <p class="project-desc">App móvil de cursos. Frontend en Kotlin, backend en Go con notificaciones push.</p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span> <span class="tag">Go</span> <span class="tag">Android</span>
+                            </div>
+                            <a href="https://github.com/SujeyCalderon/Cursy_app" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img/juego.jpeg" alt="Juego del Ahorcado"></div>
+                        <div class="project-info">
+                            <h3>Juego del Ahorcado</h3>
+                            <p class="project-role">Mobile Developer</p>
+                            <p class="project-desc">Juego nativo Android interactivo con interfaz colorida y lógica de intentos limitada.</p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span> <span class="tag">Android</span>
+                            </div>
+                            <a href="https://github.com/SujeyCalderon/juego_ahorcado" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img/mangos.jpeg" alt="Sistema de Mangos"></div>
+                        <div class="project-info">
+                            <h3>Sistema de Mangos</h3>
+                            <p class="project-role">Backend · Administración</p>
+                            <p class="project-desc">Sistema administrativo para producción agrícola, logística y comercialización de mangos.</p>
+                            <div class="project-tags">
+                                <span class="tag">Backend</span> <span class="tag">SQL</span> <span class="tag">Admin</span>
+                            </div>
+                            <a href="https://github.com/SujeyCalderon/Proyecto-Mangos" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 4rem;">
+                    <p class="text-muted" style="margin-bottom: 1.5rem;">¿Quieres ver más de mi trabajo?</p>
+                    <a href="https://github.com/SujeyCalderon" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Visitar mi GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section-solid">
+            <div class="container" style="max-width: 800px;">
+                <h2 class="section-title">💼 Experiencia Profesional</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Desarrolladora Full Stack @ <span class="company"><a href="https://issmexico.com.mx/" target="_blank" style="color: inherit; text-decoration: none;">CHAKTE S.A. DE C.V.</a></span></h3>
+                            <p class="timeline-date">2024 — 2025</p>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="mono" style="color: var(--secondary); margin: 1.5rem 0 0.5rem;">Proyecto Beblis</h4>
+                            <ul>
+                                <li>Desarrollo backend para aplicación móvil.</li>
+                                <li>Implementación de APIs y gestión de bases de datos.</li>
+                                <li>Optimización de rendimiento del servidor.</li>
+                            </ul>
+
+                            <h4 class="mono" style="color: var(--secondary); margin: 1.5rem 0 0.5rem;">Proyecto Wonox</h4>
+                            <ul>
+                                <li>Desarrollo FullStack (Frontend y Backend).</li>
+                                <li>Implementación para plataformas web y móvil.</li>
+                                <li>Integración de servicios y funcionalidades completas.</li>
+                            </ul>
+
+                            <h4 class="mono" style="color: var(--primary); margin: 1.5rem 0 0.5rem;">Logros:</h4>
+                            <ul>
+                                <li>Despliegue exitoso de aplicaciones funcionales en <strong>AWS</strong> (Frontend, Backend y Base de Datos).</li>
+                                <li>Implementación de soluciones <strong>IoT</strong> integradas.</li>
+                                <li>Colaboración efectiva en equipo multidisciplinario.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="container">
+                <h2 class="section-title">🛠️ Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3 class="mono">Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Go</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">PHP</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">Express</span>
+                            <span class="skill-item">Django</span>
+                            <span class="skill-item">APIs REST</span>
+                            <span class="skill-item">Microservicios</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3 class="mono">Frontend / Mobile</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">JS</span>
+                            <span class="skill-item">TS</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Angular</span>
+                            <span class="skill-item">Kotlin</span>
+                            <span class="skill-item">Android</span>
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3 class="mono">Bases de Datos</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3 class="mono">Cloud / DevOps</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">AWS (EC2)</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h3 class="mono">Metodologías</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Agilidad</span>
+                            <span class="skill-item">Scrum</span>
+                            <span class="skill-item">Trabajo en equipo</span>
+                            <span class="skill-item">Autodidacta</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-microchip"></i>
+                        <h3 class="mono">Otros</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">IoT</span>
+                            <span class="skill-item">POO</span>
+                            <span class="skill-item">WebSockets</span>
+                            <span class="skill-item">UX básico</span>
+                            <span class="skill-item">Inglés técnico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaciones">
+            <div class="container">
+                <div class="hero-grid" style="align-items: flex-start; gap: 4rem;">
+                    <div class="animate-in">
+                        <h2 class="section-title">📜 Certificaciones</h2>
+                        <div class="cert-list">
+                            <a href="https://www.credly.com/badges/1a5fb555-ae75-412e-94e2-c9030ae45626/linked_in_profile" target="_blank" class="cert-item">
+                                <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                                <div class="cert-info">
+                                    <h4>AWS Certified Cloud Practitioner</h4>
+                                    <p class="text-muted">Amazon Web Services | Credly</p>
+                                </div>
+                            </a>
+                            <a href="https://www.credly.com/badges/1169be94-c9eb-4113-8c57-a2a86f9fa934/linked_in_profile" target="_blank" class="cert-item">
+                                <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                                <div class="cert-info">
+                                    <h4>AWS Certified Solutions Architect</h4>
+                                    <p class="text-muted">Amazon Web Services | Credly</p>
+                                </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/YTL7M569L58Z" target="_blank" class="cert-item">
+                                <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="cert-info">
+                                    <h4>Especializaciones en Desarrollo de Software</h4>
+                                    <p class="text-muted">Coursera (8 especializaciones completadas)</p>
+                                </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/YTL7M569L58Z" target="_blank" class="cert-item">
+                                <div class="cert-icon"><i class="fas fa-database"></i></div>
+                                <div class="cert-info">
+                                    <h4>Bases de Datos y Cloud Computing</h4>
+                                    <p class="text-muted">Coursera Software Engineering</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="animate-in">
+                        <h2 class="section-title">🎓 Educación</h2>
+                        <div class="skill-card" style="padding: 2.5rem; border-left: 4px solid var(--primary);">
+                            <h3 class="mono" style="color: var(--text-main); font-size: 1.6rem; margin-bottom: 0.5rem;">Ingeniería en Software</h3>
+                            <p class="mono highlight" style="font-size: 1.2rem; margin-bottom: 1rem;">UP Chiapas</p>
+                            <p class="text-muted" style="margin-bottom: 1.5rem;">2023 – 2026 | 8° Cuatrimestre</p>
+                            <p style="font-size: 1rem; line-height: 1.6;">
+                                Formación integral con enfoque en arquitectura de software, patrones de diseño avanzados y metodologías ágiles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-solid">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title" style="justify-content: center;">📩 Contacto</h2>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 1rem;">
+                    ¿Tienes un proyecto interesante o quieres charlar sobre tecnología?
+                </p>
+                <p id="contactTyping" class="text-muted mono" data-type-text="// Mis puertas digitales siempre están abiertas"></p>
+                
+                <div class="contact-grid-enhanced">
+                    <div class="contact-card-v2" onclick="copyEmail()">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p id="emailText">calderonmartinezsujey@gmail.com</p>
+                        <span class="mono highlight" style="font-size: 0.7rem; margin-top: 1rem; display: block;">Click para copiar</span>
+                    </div>
+                    
+                    <a href="https://www.linkedin.com/in/sujey-calder%C3%B3n-mart%C3%ADnez-692867278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-card-v2" style="text-decoration: none;">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>sujey-calderon-martinez</p>
+                        <span class="mono highlight" style="font-size: 0.7rem; margin-top: 1rem; display: block;">Conectar</span>
+                    </a>
+                    
+                    <a href="https://github.com/SujeyCalderon" target="_blank" class="contact-card-v2" style="text-decoration: none;">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>@SujeyCalderon</p>
+                        <span class="mono highlight" style="font-size: 0.7rem; margin-top: 1rem; display: block;">Ver repositorios</span>
+                    </a>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:calderonmartinezsujey@gmail.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                        Enviar Mensaje Directo <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="copyToast" class="copy-toast">Copiado al portapapeles! 🚀</div>
+    </main>
+
+    <footer>
+        <p class="mono">Hecho con <i class="fas fa-heart" style="color: #e74c3c;"></i> por Sujey Calderón &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
