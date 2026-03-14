@@ -801,15 +801,20 @@ footer {
         background: var(--bg-nav);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3rem;
         transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
     }
     .nav-links.active {
         right: 0;
+        visibility: visible;
+        opacity: 1;
     }
     .nav-links a {
         font-size: 1.5rem;
@@ -839,9 +844,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .nav-links {
-        display: none;
-    }
     .section-title {
         font-size: 1.8rem;
     }
